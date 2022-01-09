@@ -8,6 +8,12 @@ const {
   userPurchaseList
 } = require("../controllers/user");
 
+
+
+router.get('/',(req,res)=>{
+  res.status(200).json({status: "OK", messege:"Your Api isup and running"})
+})
+
 const { isSignedIn, isAuthenticated, isAdmin } = require("../controllers/auth");
 
 router.param("userId", getUserById);
