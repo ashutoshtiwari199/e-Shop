@@ -44,10 +44,6 @@ const port = process.env.PORT || 8000;
 
 
 
-// For host on heroku
-// if(process.env.NODE_DEV=="production"){
-//   app.use(express.static('client/build'))
-// }
 
 //Starting a server
 app.listen(port, () => {
